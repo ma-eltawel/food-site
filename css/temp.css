@@ -1,0 +1,344 @@
+/* start global */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+:root{
+    --main-col: #ff702a;
+    --bg-col: #1e1c2a;
+    --big-font: 4.4rem;
+    --h2-font: 2.2rem;
+    --p-font: 0.88rem;
+}
+*{
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    list-style: none;
+    text-decoration: none;
+    transition: all 0.28s;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
+}
+*::selection{
+    color: white;
+    background-color: var(--main-col);
+}
+body{
+    color: white;
+    background-color: var(--bg-col);
+}
+section, footer{
+    padding: 60px 16%;
+}
+.head{
+    text-align: center;
+}
+.head span{
+    color: var(--main-col);
+    font-weight: 600;
+}
+.head h2{
+    font-size: var(--h2-font);
+}
+.but{
+    display: inline-block;
+    color: white;
+    background-color: var(--main-col);
+    padding: 10px 20px;
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
+.but:hover{
+    transform: scale(1.2) translateY(10px);
+}
+/* end global */
+/* start header */
+header{
+    position: fixed;
+    display: flex;
+    left: 0;
+    right: 0;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--bg-col);
+    padding: 20px 160px;
+    z-index: 4;
+}
+header .logo{
+    color: var(--main-col);
+    font-size: 2.4rem;
+    font-weight: 600;
+}
+header #menu-but{
+    display: none;
+    font-size: 2rem;
+    cursor: pointer;
+}
+header nav a{
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 500;
+    padding: 10px 20px;
+}
+header nav a:hover{
+    color: var(--main-col);
+}
+/* end header */
+/* start home */
+#home{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 1.5rem;
+    width: 100%;
+    min-height: 90vh;
+}
+#home h1{
+    color: var(--main-col);
+    font-size: var(--big-font);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+#home h2{
+    font-size: var(--h2-font);
+    margin: 1rem 0 2rem;
+}
+#home img{
+    width: 600px;
+    max-width: 100%;
+}
+/* end home */
+/* start about */
+#about{
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    align-items: center;
+    gap: 1.5rem;
+}
+#about img{
+    width: 480px;
+    max-width: 100%;
+}
+#about span{
+    color: var(--main-col);
+    font-weight: 600;
+}
+#about h2{
+    font-size: var(--h2-font);
+}
+#about p{
+    line-height: 1.8;
+    margin: 0.8rem 0 1.8rem;
+}
+/* end about */
+/* start menu */
+#menu .container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, auto));
+    align-items: center;
+    gap: 1.5rem;
+    margin-top: 4rem;
+}
+#menu .box{
+    position: relative;
+    color: var(--bg-col);
+    background-color: #feeee7;
+    padding: 20px;
+    text-align: center;
+    border-radius: 0.5rem;
+}
+#menu .image{
+    width: 220px;
+    height: 220px;
+}
+#menu img{
+    width: 100%;
+    height: 100%;
+}
+#menu h2{
+    font-size: 1.4rem;
+}
+#menu h3{
+    font-size: 1rem;
+    font-weight: 400;
+    margin: 4px 0 10px;
+}
+#menu span{
+    color: var(--main-col);
+    font-size: var(--p-font);
+    font-weight: 600;
+    background-color: var(--bg-col);
+    padding: 0.2rem;
+    border-radius: 6px;
+}
+#menu i{
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: white;
+    font-size: 20px;
+    background-color: var(--main-col);
+    padding: 8px 10px;
+    border-radius: 0 0.5rem;
+    cursor: pointer;
+}
+/* end menu */
+/* start services */
+#services .container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, auto));
+    gap: 1.5rem;
+    margin-top: 4rem;
+}
+#services .box{
+    padding: 20px;
+    text-align: center;
+}
+#services img{
+    height: 90px;
+}
+#services h3{
+    color: var(--main-col);
+    font-size: 1.2rem;
+    margin: 4px 0 10px;
+}
+#services p{
+    line-height: 1.8;
+}
+/* end services */
+.here{
+    width: 66%;
+    padding: 60px 0;
+    margin: 80px auto;
+    text-align: center;
+    background-color: #feeee7;
+    border-radius: 10px;
+}
+.here h2{
+    color: var(--bg-col);
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+/* start footer */
+footer .container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+footer .box{
+    padding: 10px 0;
+}
+footer h4{
+    position: relative;
+    font-size: 1.2rem;
+    margin-bottom: 25px;
+}
+footer h4::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    width: 60px;
+    height: 2px;
+    background-color: var(--main-col);
+}
+footer li{
+    margin-bottom: 15px;
+}
+footer li a{
+    display: block;
+    color: #feeee7;
+    font-size: 1.12rem;
+}
+footer li a:hover{
+    color: white;
+    transform: translateX(-12px);
+}
+footer .social{
+    display: flex;
+    width: 220px;
+    justify-content: space-between;
+}
+footer .social a{
+    display: inline-flex;
+    width: 40px;
+    height: 40px;
+    color: white;
+    font-size: 1.5rem;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--main-col);
+    border-radius: 50%;
+}
+footer .social a:hover{
+    color: var(--bg-col);
+    background-color: white;
+    transform: scale(1.2);
+}
+.rights{
+    padding: 20px;
+    text-align: center;
+    border-top: 1px solid #feeee7;
+}
+.rights span{
+    color: var(--main-col);
+}
+/* end footer */
+/* start media quieries */
+@media (max-width: 1200px){
+    :root{
+        --big-font: 3.5rem;
+        --h2-font: 2rem;
+        --p-font: 0.88rem;
+    }
+    header{
+        padding: 15px 40px;
+    }
+    section, footer{
+        padding: 50px 8%;
+    }
+}
+@media (max-width: 768px) {
+    header nav{
+        position: absolute;
+        top: -400px;
+        left: 0;
+        right: 0;
+        text-align: center;
+        background-color: #feeee7;
+    }
+    header nav.active{
+        top: 80px;
+    }
+    header nav a{
+        display: block;
+        color: var(--bg-col);
+        padding: 1.2rem;
+    }
+    header nav a:hover{
+        color: var(--main-col);
+    }
+    header #menu-but{
+        display: initial;
+    }
+}
+@media (max-width: 450px){
+    header{
+        padding: 10px 16px;
+    }
+    section, footer{
+        padding: 100px 6%;
+    }
+    header img{
+        width: 30px;
+    }
+    #home, #about{
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+    #about .image{
+        order: 2;
+    }
+}
+/* end media quieries */
